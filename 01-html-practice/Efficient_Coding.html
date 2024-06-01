@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet, Div Tag, Lists and Anchor Tag Variations</title>
+</head>
+
+<body>
+    <h1>What is emmet?</h1>
+    <p>By default installed in Visual studio code using shortcuts to generate complete code with less efforts.
+    <pre>for example:
+            p>p>p : it describe that make a parageaph and then one more inner paragraph and then one more innner paragraph.
+            <code>
+                &lt;p&gt;
+                    &lt;p&gt;
+                        &lt;p&gt; &lt;/p&gt;
+                    &lt;/p&gt;
+                &lt;/p&gt;
+            </code>
+        </pre>
+    <pre>for example:
+            ul>li*3 : it describe that make a unorderd list and then 3 list in unorderd list.
+            <code>
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            </code>
+        </pre>
+    <pre>for example:
+            #page>div.logo+ul#navigation>li*5>a{Item $} : it describe that make a div named page and inside of it make a div with class logo and make an unordered list with id navigation and 5 lists inside unordered list and in each list make anchor tag.
+            <code>
+                &lt;div id="page"&gt;
+                    &lt;div class="logo"&gt;&lt;/div&gt;
+                    &lt;ul id="navigation"&gt;
+                        &lt;li&gt;&lt;a href=""&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=""&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=""&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=""&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=""&gt;Item 5&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+    </p>
+    <h1>What is Div Tag?</h1>
+    <p>Non semantic tag a genaric container tag used for wrapping</p>
+    <p>This div serves as a container with the class "div1" we can style this div or perform any function on this div.
+    </p>
+    <pre>
+        &lt;div class="div1"&gt;
+            &lt;article&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;p&gt;&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;section&gt;&lt;/section&gt;
+        &lt;/div&gt;
+    </pre>
+    <div style="background-color: antiquewhite;" class="div1">
+        <article>
+            <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </article>
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</section>
+    </div>
+    <h1>Block vs Inline elements</h1>
+    <ul>
+        <li><strong>Block elements</strong> typically start on a new line and take up the full width available to them.
+        </li>
+        <li>Examples of block elements include <strong><code>div, p, h1 to h6, ul, ol,li, table, form,</code></strong>
+            etc.</li>
+        <li>Block elements can contain other block elements and inline elements.</li>
+        <li>By default, block elements have margins and padding, which can be modified using CSS.</li>
+    </ul>
+    <h2>Example of Block elements</h2>
+    <div style="background-color: antiquewhite;"> Example Div</div>
+    <p style="background-color: antiquewhite;"> Example Paragraph</p>
+    <h1 style="background-color: antiquewhite;"> H1</h1>
+    <h2 style="background-color: antiquewhite;"> H2</h2>
+    <h3 style="background-color: antiquewhite;"> H3</h3>
+    <h4 style="background-color: antiquewhite;"> H4</h4>
+    <h5 style="background-color: antiquewhite;"> H5</h5>
+    <h6 style="background-color: antiquewhite;"> H6</h6>
+    <div style="background-color: pink;">
+        <h1 style="background-color: aquamarine;">H1</h1>
+        <a style="background-color:bisque;" href="">anchor tag that is inline element <div
+                style="background-color: yellowgreen;">anchor tag does not contain block element.</div></a>
+    </div>
+    <ul>
+        <li><strong>Inline elements</strong> do not start on a new line. They typically flow along with surrounding
+            content. </li>
+        <li>Examples of inline elements include <strong><code>span, a, strong, em, img, input, button,</code></strong>
+            etc.</li>
+        <li>Inline elements only occupy the space bounded by the content within them.</li>
+        <li>inline elements cannot contain block elements but can contain other inline elements.</li>
+        <li>Inline elements are often used for small, inline-level content within a larger block of text.</li>
+    </ul>
+    <h2>Example of Inline elements</h2>
+    <span style="background-color: antiquewhite;"> Example Span</span> </br>
+    <span style="background-color: pink;">
+        <a style="background-color:bisque;" href="">anchor tag that is inline element </a> </br>
+        <strong>Strong element that is inline</strong> </br>
+        <em>emphasise element that is inline</em>
+        <div style="background-color: aliceblue;">
+            <img style="padding: 50px;margin: 50px;"
+                src="https://mycareer.botnosticsolutions.ai/static/uet_main-264cd79ebad22e539f70dca0967c3a3a.jpg"
+                alt="example image">
+        </div>
+        <button>Span Button Click here!</button>
+    </span>
+
+
+    <h1>Lists</h1>
+    <p>This structure represents a list of items with links. Each list item (<code>&lt;li&gt;</code>) contains a
+        paragraph (<code>&lt;p&gt;</code>) with an anchor (<code>&lt;a&gt;</code>) element inside it. T</p>
+    <ul>
+        <li>
+            <p><a href="https://www.google.com/">Go to Google</a></p>
+        </li>
+        <li>
+            <p><a href="https://www.google.com/">Go to Google</a></p>
+        </li>
+        <li>
+            <p><a href="https://www.google.com/">Go to Google</a></p>
+        </li>
+        <li>
+            <p><a href="https://www.google.com/">Go to Google</a></p>
+        </li>
+        <li>
+            <p><a href="https://www.google.com/">Go to Google</a></p>
+        </li>
+        <li>
+            <p><a href="https://www.google.com/">Go to Google</a></p>
+        </li>
+        <li>
+            <p><a href="https://www.google.com/">Go to Google</a></p>
+        </li>
+    </ul>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="mailto:m.daniyaltariq9063@gmail.com">Send mail</a></li>
+            <li><a href="tel:03494274921">Add a Call</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
