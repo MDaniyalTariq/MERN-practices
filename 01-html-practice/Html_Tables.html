@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tables: Rows, Columns, and Advanced Attributes</title>
+  </head>
+
+  <body>
+    <h1>What is a Table?</h1>
+    <p>Arrangement of data in the form of rown and coloumns is called table</p>
+    <h2>Lets understand the table..</h2>
+    <ul>
+      <li>Horizontal distribution is called <strong>row</strong></li>
+      <li>Vertical distribution is called <strong>column</strong></li>
+      <li>Intersection of row and column is called <strong>cell</strong></li>
+    </ul>
+    <h2>Lets create the table..</h2>
+    <h3>Available tags to make table..</h3>
+    <ol>
+      <li><strong>table</strong>(to create the table in html)</li>
+      <li>
+        <strong>thead</strong>(to create the header(headings) of the table)
+      </li>
+      <li><strong>tbody</strong>(actual content of the table)</li>
+      <li>
+        <strong>tfoot</strong>(summarizing of the table i.e(total epenses))
+      </li>
+      <li><strong>tr</strong>(to create any row in table)</li>
+      <li><strong>td</strong>(to add the data in table row)</li>
+      <li><strong>th</strong>(to create any heading in thead)</li>
+    </ol>
+    <h3>Example Simple table</h3>
+    <p>border attribute is used to add border in overall table</p>
+    <table border="1">
+      <thead>
+        <th>No.</th>
+        <th>Full Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td>$1000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Steve Jobs</td>
+          <td>Founder Apple</td>
+          <td>$1200</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry Page</td>
+          <td>Founder Google</td>
+          <td>$1100</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mark Zuckberg</td>
+          <td>Founder Facebook</td>
+          <td>$1300</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Example table using column span and row span</h3>
+    <ul>
+      <li>
+        <strong>border</strong> attribute is used to add border in overall table
+      </li>
+      <li><strong>Row span</strong>:to span row</li>
+      <li><strong>Column span</strong>:to span column</li>
+    </ul>
+    <table border="1">
+      <thead>
+        <th>No.</th>
+        <th>Full Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td colspan="3">Bill Gates</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Steve Jobs</td>
+          <td>Founder Apple</td>
+          <td rowspan="3">$1200</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry Page</td>
+          <td>Founder Google</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mark Zuckberg</td>
+          <td>Founder Facebook</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Another practice table</h3>
+    <table border="1">
+      <thead>
+        <th>Column 1</th>
+        <th>Coloumn 2</th>
+        <th>Column 3</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Row 1 Cell 1</td>
+          <td>Row 1 Cell 2</td>
+          <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2 Cell 2</td>
+          <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+          <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Another practice table using Footer</h3>
+    <table border="1">
+      <thead>
+        <th>No.</th>
+        <th>Full Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th>Type</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td>$1000</td>
+          <td rowspan="4">Comapny Founder</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Steve Jobs</td>
+          <td>Founder Apple</td>
+          <td>$1200</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry Page</td>
+          <td>Founder Google</td>
+          <td>$1100</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mark Zuckeberg</td>
+          <td>Founder Facebook</td>
+          <td>$1300</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Expense:</td>
+          <td>$4600</td>
+        </tr>
+      </tfoot>
+    </table>
+    <h3>Another practice table..</h3>
+    <table border="1">
+      <thead>
+        <th>Country</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Street</th>
+        <th>Male</th>
+        <th>Female</th>
+        <th>Others</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="8">1</td>
+          <td rowspan="4">Kerala</td>
+          <td rowspan="2">Cochin</td>
+          <td>New Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Main Street</td>
+          <td>300</td>
+          <td>288</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Trivandrum</td>
+          <td>Guru Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>TVK Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="4">Maharastra</td>
+          <td rowspan="2">Mumbai</td>
+          <td>Krisha Street</td>
+          <td>700</td>
+          <td>850</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Main Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Surath</td>
+          <td>New Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Billa Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2</td>
+          <td rowspan="2">Alaska</td>
+          <td rowspan="2">AKA Central</td>
+          <td>New Street</td>
+          <td>200</td>
+          <td>210</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Cross Street</td>
+          <td>1000</td>
+          <td>1050</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Another practice table..</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="3">Day</th>
+          <th colspan="5">Seminar</th>
+        </tr>
+        <tr>
+          <th colspan="2">Schedule</th>
+          <th colspan="3" rowspan="2">Topic</th>
+        </tr>
+        <tr>
+          <th>Begin</th>
+          <th>End</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td rowspan="2">8:00 a.m.</td>
+          <td rowspan="2">5:00 p.m.</td>
+          <td>Introduction To XML.</td>
+        </tr>
+        <tr>
+          <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Tuesday</td>
+          <td>8:00 a.m.</td>
+          <td>11:00 a.m.</td>
+          <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+          <td>11:00 a.m.</td>
+          <td>2:00 p.m.</td>
+        </tr>
+        <tr>
+          <td>2:00 p.m.</td>
+          <td>5:00 p.m.</td>
+          <td rowspan="1">XSL Transformations</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>8:00 a.m.</td>
+          <td>12:00 p.m.</td>
+          <td>XSL Formatting Objects.</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
