@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* Element Selector */
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: blueviolet;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #important {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Descendant Selector */
+        .container p {
+            font-style: italic;
+            color: black;
+        }
+
+        /* Combinator Selectors */
+        /* Descendant Selector */
+        div p {
+            font-weight: bold;
+        }
+
+        /* Child Selector */
+        ul>li {
+            color: green;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2+p {
+            font-style: italic;
+        }
+
+        /* General Sibling Selector */
+        h2~p {
+            color: purple;
+        }
+
+        /* Pseudo-class Selectors */
+        /* Hover */
+        p:hover {
+            background-color: lightblue;
+        }
+
+        /* Active */
+        p:active {
+            color: orange;
+        }
+
+        /* Focus */
+        input:focus {
+            border: 2px solid red;
+        }
+
+        /* nth-child */
+        ul li:nth-child(odd) {
+            background-color: pink;
+        }
+
+        /* First Child */
+        ul li:first-child {
+            font-weight: bolder;
+        }
+
+        /* Last Child */
+        ul li:last-child {
+            font-style: italic;
+        }
+
+        /* Not Selector */
+        p:not(.highlight) {
+            color: gray;
+        }
+
+        /* Pseudo-elements Selectors */
+        /* Before */
+        p::before {
+            content: "Before Text ";
+        }
+
+        /* After */
+        p::after {
+            content: " After Text";
+        }
+
+        /* First Line */
+        p::first-line {
+            font-weight: bolder;
+        }
+
+        /* First Letter */
+        p::first-letter {
+            font-size: 21px;
+        }
+
+        /* Attribute Selectors */
+        /* Attribute */
+        a[target] {
+            color: blue;
+        }
+
+        /* Attribute with Value */
+        input[type="text"] {
+            border: 1px solid black;
+        }
+
+        /* Attribute with Word */
+        a[href*="example"] {
+            text-decoration: line-through;
+        }
+
+        /* Attribute Starting with Value */
+        input[type^="sub"] {
+            background-color: lightgray;
+        }
+
+        /* Attribute Ending with Value */
+        input[type$="sword"] {
+            border: 2px dashed green;
+        }
+
+        /* Attribute Containing Value */
+        input[type*="pass"] {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Selectors in CSS</h1>
+
+    <h2>Element Selector</h2>
+    <p>This is a paragraph. Element selectors select HTML elements based on their tag name.</p>
+
+    <h2>Class Selector</h2>
+    <p class="highlight">This paragraph is highlighted using a class selector.</p>
+
+    <h2>ID Selector</h2>
+    <p id="important">This paragraph is styled to be important using an ID selector.</p>
+
+    <h2>Descendant Selector</h2>
+    <div class="container">
+        <p>This paragraph is italicized because it is inside a container with a specific class.</p>
+    </div>
+    <h2>Combinator Selectors</h2>
+    <ul>
+        <li>This is a child item</li>
+        <li>This is another child item</li>
+    </ul>
+     <h2>Pseudo-class Selectors</h2>
+     <form action="">
+        <input type="text"  placeholder="Enter your username">
+        <input type="password" placeholder="Enter your password">
+        <input type="submit" value="submit">
+     </form>
+     <h2>Pseudo-elements Selectors</h2>
+    <p>This is a paragraph</p>
+     <h2>Attribute Selectors</h2>
+     <a href="https://www.example.com">Example Link</a>
+     <input type="text" placeholder="Enter your name">
+
+
+    <h2>HTML and CSS Code Example</h2>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Selectors in CSS&lt;/title&gt;
+            &lt;style&gt;
+                /* Element Selector */
+                h1 {
+                    color: blue;
+                }
+                p{
+                    color: blueviolet;
+                }
+                
+                /* Class Selector */
+                .highlight {
+                    background-color: yellow;
+                }
+                
+                /* ID Selector */
+                #important {
+                    color: red;
+                    font-weight: bold;
+                }
+                
+                /* Descendant Selector */
+                .container p {
+                    font-style: italic;
+                    color: black;
+                }
+                
+                /* Combinator Selectors */
+                /* Descendant Selector */
+                div p {
+                    font-weight: bold;
+                }
+                /* Child Selector */
+                ul &gt; li {
+                    color: green;
+                }
+                /* Adjacent Sibling Selector */
+                h2 + p {
+                    font-style: italic;
+                }
+                /* General Sibling Selector */
+                h2 ~ p {
+                    color: purple;
+                }
+                
+                /* Pseudo-class Selectors */
+                /* Hover */
+                p:hover {
+                    background-color: lightblue;
+                }
+                /* Active */
+                p:active {
+                    color: orange;
+                }
+                /* Focus */
+                input:focus {
+                    border: 2px solid red;
+                }
+                /* nth-child */
+                ul li:nth-child(odd) {
+                    background-color: lightgray;
+                }
+                /* First Child */
+                ul li:first-child {
+                    font-weight: bold;
+                }
+                /* Last Child */
+                ul li:last-child {
+                    font-style: italic;
+                }
+                /* Not Selector */
+                p:not(.highlight) {
+                    color: gray;
+                }
+                
+                /* Pseudo-elements Selectors */
+                /* Before */
+                p::before {
+                    content: "Before Text ";
+                }
+                /* After */
+                p::after {
+                    content: " After Text";
+                }
+                /* First Line */
+                p::first-line {
+                    font-weight: bold;
+                }
+                /* First Letter */
+                p::first-letter {
+                    font-size: 24px;
+                }
+                
+                /* Attribute Selectors */
+                /* Attribute */
+                a[target] {
+                    color: blue;
+                }
+                /* Attribute with Value */
+                input[type="text"] {
+                    border: 1px solid black;
+                }
+                /* Attribute with Word */
+                a[href*="example"] {
+                    text-decoration: underline;
+                }
+                /* Attribute Starting with Value */
+                input[type^="sub"] {
+                    background-color: lightgray;
+                }
+                /* Attribute Ending with Value */
+                input[type$="sword"] {
+                    border: 2px dashed green;
+                }
+                /* Attribute Containing Value */
+                input[type*="pass"] {
+                    background-color: lightgreen;
+                }
+                &lt;/style&gt
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Selectors in CSS&lt;/h1&gt;
+                    
+                    &lt;h2&gt;Element Selector&lt;/h2&gt;
+                    &lt;p&gt;This is a paragraph. Element selectors select HTML elements based on their tag name.&lt;/p&gt;
+                    
+                    &lt;h2&gt;Class Selector&lt;/h2&gt;
+                    &lt;p class="highlight"&gt;This paragraph is highlighted using a class selector.&lt;/p&gt;
+                    
+                    &lt;h2&gt;ID Selector&lt;/h2&gt;
+                    &lt;p id="important"&gt;This paragraph is styled to be important using an ID selector.&lt;/p&gt;
+                    
+                    &lt;h2&gt;Descendant Selector&lt;/h2&gt;
+                    &lt;div class="container"&gt;
+                        &lt;p&gt;This paragraph is italicized because it is inside a container with a specific class.&lt;/p&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;h2&gt;Combinator Selectors&lt;/h2&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;This is a child item&lt;/li&gt;
+                        &lt;li&gt;This is another child item&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                    &lt;h2&gt;Pseudo-class Selectors&lt;/h2&gt;
+                    &lt;form&gt;
+                        &lt;input type="text" placeholder="Enter your username"&gt;
+                        &lt;input type="password" placeholder="Enter your password"&gt;
+                        &lt;button&gt;Submit&lt;/button&gt;
+                    &lt;/form&gt;
+                    
+                    &lt;h2&gt;Pseudo-elements Selectors&lt;/h2&gt;
+                    &lt;p&gt;This is a paragraph&lt;/p&gt;
+                    
+                    &lt;h2&gt;Attribute Selectors&lt;/h2&gt;
+                    &lt;a href="https://www.example.com"&gt;Example Link&lt;/a&gt;
+                    &lt;input type="text" placeholder="Enter your name"&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+                </pre>
+
+</body>
+
+</html>

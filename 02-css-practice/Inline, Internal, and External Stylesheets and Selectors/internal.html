@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: blue;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .important {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ways To Add CSS</h1>
+    <ol>
+        <li>inline</li>
+        <li><strong>internal</strong> </li>
+        <li>external</li>
+    </ol>
+    <h2>HTML Code Example</h2>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Internal CSS&lt;/title&gt;
+            &lt;style&gt;
+                body {
+                    font-family: Arial, sans-serif;
+                }
+                h1 {
+                    color: blue;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+                .highlight {
+                    background-color: yellow;
+                }
+                .important {
+                    color: red;
+                    font-weight: bold;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Ways To Add CSS&lt;/h1&gt;
+            &lt;ol&gt;
+                &lt;li&gt;inline&lt;/li&gt;
+                &lt;li&gt;internal&lt;/li&gt;
+                &lt;li&gt;external&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;h2&gt;Internal CSS&lt;/h2&gt;
+            &lt;p class="highlight"&gt;This paragraph is highlighted using internal CSS.&lt;/p&gt;
+            &lt;p class="important"&gt;This paragraph is styled to be important using internal CSS.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h2>Output</h2>
+    <p class="highlight">This paragraph is highlighted using internal CSS.</p>
+    <p class="important">This paragraph is styled to be important using internal CSS.</p>
+    
+    
+</body>
+</html>

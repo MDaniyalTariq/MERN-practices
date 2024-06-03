@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal, and External Stylesheets</title>
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>What is CSS?</h1>
+    <p><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heet used to work with appearnce related
+        things of website page,used to enhance the appearnce of web page.</p>
+    <h2>What is cascading?</h2>
+    <p>The cascading in CSS refers to the process where styles are applied hierarchically, allowing more specific rules
+        to override general ones. Styles cascade from parent elements to child elements, with regulations from external
+        stylesheets, embedded styles, and inline styles contributing to the final appearance of elements on a webpage.
+    </p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        
+        &lt;head&gt;
+            &lt;style&gt;
+                h1 {
+                    font-size: 40px;
+                    text-align: center;
+                    color: red;
+                }
+        
+                h1 {
+                    color: green;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+            &lt;h1&gt;M.Daniyal Tariq&lt;/h1&gt;
+            &lt;p&gt;
+                The second style gets applied because
+                it is applied after the first.
+            &lt;/p&gt;
+        &lt;/body&gt;
+        
+        &lt;/html&gt;
+        </code></pre>
+    <center>
+        <h1>Output will look like</h1>
+    </center>
+    <h1 style="color: green; font-size: 40px;
+        text-align: center;">GeeksforGeeks</h1>
+    <p>
+        The second style gets applied because
+        it is applied after the first.
+    </p>
+    <h2>Methods of adding CSS</h2>
+    <ol>
+        <li>Inline</li>
+        <li>Internal</li>
+        <li>External</li>
+    </ol>
+</body>
+
+</html>
