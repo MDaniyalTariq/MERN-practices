@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <h1>What is Form?</h1>
+    <ul>
+        <li>
+            A structure used to collect user data (user input from website)
+        </li>
+        <h3>Tags for Forms</h3>
+        <li><strong>form</strong> use to create a HTML form</li>
+        <li><strong>Form Elements</strong>
+            <ul>
+                <li>input</li>
+                <li>label</li>
+                <li>select
+                    <ol>
+                        <li>option</li>
+                    </ol>
+                </li>
+                <li>button</li>
+                <li>textarea</li>
+                <li>fieldset</li>
+                <li>legend</li>
+            </ul>
+        </li>
+        <li><strong>input</strong> use to get input from user
+            <ul>
+                <li>email</li>
+                <li>password</li>
+                <li>submit</li>
+                <li>radio</li>
+                <li>checkbox</li>
+                <li>text</li>
+                <li>file</li>
+                <li>image button</li>
+                <li>datepicker</li>
+            </ul>
+        </li>
+        <li>Attribues for input
+            <ul>
+                <li>id</li>
+                <li>type</li>
+                <li>name</li>
+                <li>placeholder</li>
+            </ul>
+        </li>
+        <li><strong>label</strong>
+            <ol>
+                <li>use to describe what to do in input</li>
+                <li>(screen reader)</li>
+                <li><strong>for</strong> attribute (label <strong>for</strong> and input <strong>id</strong> should be
+                    same)</li>
+            </ol>
+        </li>
+        <li><strong>Submitting the data:</strong>
+            <ol>
+                <li>using input type=submit</li>
+                <li>using sepcifyimg action attrivute of form</li>
+                <li>using custom button behaviour</li>
+            </ol>
+        </li>
+    </ul>
+    <h2>Exampe Login Form</h2>
+    <form>
+
+        <label for="email">Enter Email ID:</label>
+        <input type="email" name="" id="email" placeholder="abc@example.com">
+        </br>
+        </br>
+        <label for="password">Enter Password:</label>
+        <input type="password" name="" id="password" placeholder="*********">
+        </br>
+        </br>
+        <label for="m">male</label>
+        <input type="radio" value="male" id="m">
+        </br>
+        </br>
+        <label for="f">female</label>
+        <input type="radio" value="female" id="f">
+        </br>
+        </br>
+        <label for="o">other</label>
+        <input type="radio" value="other" id="o">
+
+        </br>
+        </br>
+        <input type="checkbox" value="">
+        </br>
+        </br>
+        <input type="date" name="" id="">
+        <input type="submit" value="Login">
+    </form>
+    <h2>Another practice form</h2>
+    <form action="">
+        <fieldset>
+            <legend>Example form</legend>
+            <label for="n1">Ennter name</label>
+            <input type="text" name="name" id="n1">
+            </br>
+            </br>
+            <label for="e1">Enter email</label>
+            <input type="email" name="email" id="e1">
+            </br>
+            </br>
+            <label for="t1">Enter Phone</label>
+            <input type="tel" value="" id="t1">
+            </br>
+            </br>
+            <input type="submit" value="subscribe now" name="button1" id="button1">
+            </br>
+            </br>
+            <label for="radio1">radio 1</label>
+            <input type="radio" value="" name="radio1" id="radio1">
+            <label for="radio2">radio 2</label>
+            <input type="radio" value="" name="radio1" id="radio2">
+            <label for="radio3">radio 3</label>
+
+            <input type="radio" value="" name="radio1" id="radio3">
+            </br>
+            </br>
+            <label for="ch1">chekbox1</label>
+            <input type="checkbox" value="" name="checkbox1" id="ch1">
+            <label for="ch2">chekbox2</label>
+            <input type="checkbox" value="" name="checkbox2" id="ch2">
+            <label for="ch3">chekbox3</label>
+            <input type="checkbox" value="" name="checkbox3" id="ch3">
+            <label for="ch4">chekbox4</label>
+            <input type="checkbox" value="" name="checkbox4" id="ch4">
+            </br>
+            </br>
+            <label for="b1">choose file</label>
+            <input type="file" value="" name="file1" id="b1">
+            </br>
+            </br>
+            <label for="i1">image button</label>
+            <input type="image" value="" name="chooseimage1" id="i1" alt="no image selected"
+                src="https://mycareer.botnosticsolutions.ai/static/uet_main-264cd79ebad22e539f70dca0967c3a3a.jpg"
+                width="25px" height="25px">
+            </br>
+            </br>
+            <label for="datepicker">select date:</label>
+            <input type="date" value="datepicker">
+            </br>
+            </br>
+            <label for="selecter">Choose your faviorite dish</label>
+            <select name="dishes" id="selecter">
+                <option value="maggi">maggie</option>
+                <option value="kurkure">kurkure</option>
+                <option value="chips">chips</option>
+            </select>
+            </br>
+            </br>
+
+            <br><br>
+            <textarea name="textarea1" id="textarea1" placeholder="enter text here" rows="4" cols="45"></textarea>
+            <br><br>
+            <button>Example button</button>
+        </fieldset>
+    </form>
+    <h2>Event Registration form</h2>
+    <form action="">
+        <label for="name">Name:</label> </br> </br>
+        <input type="text" value="" placeholder="enter your name" id="name"></br></br>
+        <label for="email">Email:</label> </br> </br>
+        <input type="text" value="" placeholder="enter your email" id="email"> </br></br>
+        <label for="telephone">Telephone:</label> </br> </br>
+        <input type="tel" value="" placeholder="enter your phone no" id="telephone"></br></br>
+        <label for="occupation">Occupation:</label></br> </br>
+        <select name="" id="occupation">
+            <option value="o1">occupation1</option>
+            <option value="o2">occupation2</option>
+            <option value="o3">occupation3</option>
+            <option value="04">occupation4</option>
+        </select> <br><br>
+        <fieldset>
+            <legend>Topics Of interest</legend>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="" id="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="" id="css">
+            <label for="js">Javascript</label>
+            <input type="checkbox" name="" id="js"> <br><br>
+        </fieldset>
+        <label for="comments">Comments:</label> <br> <br>
+        <textarea name="" id="comments" cols="40" rows="5"></textarea> <br> <br>
+        <input type="submit" value="Register">
+    </form>
+    <h2>Job application form</h2>
+    <form action="">
+        <label for="name">Name:</label> </br> </br>
+        <input type="text" value="" placeholder="enter your name" id="name"></br></br>
+        <label for="email">Email:</label> </br> </br>
+        <input type="text" value="" placeholder="enter your email" id="email"> </br></br>
+        <label for="telephone">Telephone:</label> </br> </br>
+        <input type="tel" value="" placeholder="enter your phone no" id="telephone"></br></br>
+        <label for="resume">Resume:</label> </br> </br>
+        <input type="file" name="" id="resume"></br></br>
+        <label for="experience">Experience (Years):</label> </br> </br>
+        <input type="number" name="" id="experience"></br></br>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="html">HTML</label><br>
+            <input type="checkbox" name="" id="html"> <br><br>
+            <label for="css">CSS</label><br>
+            <input type="checkbox" name="" id="css"><br><br>
+            <label for="js">Javascript</label><br>
+            <input type="checkbox" name="" id="js"> <br><br>
+        </fieldset>
+        <label for="edu">Highest Education:</label></br> </br>
+        <select name="" id="edu">
+            <option value="o1">Education1</option>
+            <option value="o2">Education2</option>
+            <option value="o3">Education3</option>
+            <option value="04">Education4</option>
+        </select> <br><br>
+        <fieldset style="border: 0;">
+            <legend>Availability</legend>
+            <label for="ft">Full time</label><br>
+            <input type="radio" name="av" id="ft"> <br><br>
+            <label for="pt">Part time</label><br>
+            <input type="radio" name="av" id="pt"><br><br>
+        </fieldset>
+        <label for="Additional comments">Additional Comments:</label></br> </br>
+        <textarea name="" id="Additional comments"></textarea><br> <br>
+        <input type="submit" value="Submit Application">
+    </form>
+    <h2>Complex Form</h2>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email">
+            <label for="Phone">Phone:</label>
+            <input type="tel" name="" id="Phone">
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="" id="dob">
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="country">Country:</label>
+            <select name="" id="sel">
+                <option value="">United States</option>
+                <option value="">Pakistan</option>
+                <option value="">India</option>
+            </select>
+        </fieldset>
+        </br>
+        <fieldset>
+            <legend><strong>Address:</strong> <label for="street">Street: </label><input type="text" name=""
+                    id="street"> <label for="city">City: </label><input type="text" name="" id="city"> <label
+                    for="state">State: </label><input type="text" name="" id="state"> <label for="zip">Zip Code:
+                </label><input type="text" name="" id="zip"></legend>
+
+        </fieldset>
+        </br>
+        <fieldset>
+            <legend>Other information</legend>
+            <label for="comments">Comments: </label>
+            <textarea name="" id="comments" cols="50" rows="6"></textarea>
+            <label for="tands">I agree to the term and services: </label>
+            <input type="checkbox" name="" id="tands">
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
